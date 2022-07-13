@@ -32,11 +32,11 @@ public class SendEmail {
 		   
 		   Session session = Session.getInstance(props, new javax.mail.Authenticator() {
 		      protected PasswordAuthentication getPasswordAuthentication() {
-		         return new PasswordAuthentication("osamazameer5268@gmail.com", "oktroepoxfoldbkq");
+		         return new PasswordAuthentication("<email>", "<key>");
 		      }
 		   });
 		   Message msg = new MimeMessage(session);
-		   msg.setFrom(new InternetAddress("osamazameer5268@gmail.com", false));
+		   msg.setFrom(new InternetAddress("<email>", false));
 
 		   msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recepient));
 		   msg.setSubject("Social Reads");
